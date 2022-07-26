@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.ThemeButton {
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.UserPage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.UsersPage-content {
+  display: flex;
+  padding: 0 10px;
+}
+
+.UsersPage-content.dark {
+  background-color: black;
+  color: #fff;
+}
+
+.UsersList-list {
+  max-width: 500px;
+}
+
+.UserItem {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  padding: 10px;
+  border: 0;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.UserItem:hover > .vote-element {
+  display: block;
+  position: absolute;
+  left: 18px;
+}
+
+.vote-element {
+  display: none;
+  z-index: 1;
+}
+
+.UserItem.voted {
+  background: #99bfff;
+}
+
+.UserItem.dark {
+  background-color: #bbb;
+  border: 1px solid #fff;
+}
+
+.UserItem:focus,
+.UserItem:active {
+  background: #d9e7ff;
+}
+
+.UserItem > img {
+  border-radius: 50%;
+}
+
+.UserItem > img:hover {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.UserInfo-container {
+  display: flex;
+  width: 50%;
+  align-items: flex-start;
+  padding: 10px 20px;
+}
+
+.UserInfo-data {
+  flex-grow: 1;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.UserInfo-data > h3 {
+  margin: 0;
+}
+
+.UserInfo-button {
+  border: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.UserInfo-button.vote {
+  background-color: #488e30;
+  color: #fff;
+}
+
+.UserInfo-button.modal {
+  margin-left: 10px;
+}
+
+.Modal-blanket {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.Modal-body {
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+  top: 30px;
+  bottom: 30px;
+  width: 30%;
+  left: 50%;
+  margin-left: -15%;
+  border-radius: 10px;
+  padding: 40px;
+  overflow: auto;
+}
+
+.UserDescription {
+  margin: 15px 0;
+}
